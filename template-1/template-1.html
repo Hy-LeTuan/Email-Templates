@@ -26,6 +26,10 @@
 				border: 0;
 			}
 
+			div {
+				margin: 0;
+			}
+
 			.wrapper {
 				box-sizing: border-box;
 				background-color: #ccc;
@@ -57,6 +61,11 @@
 				border-bottom: 8px solid #364f6b;
 			}
 
+			.main__header img {
+				display: block;
+				margin: 0;
+			}
+
 			.main__content p {
 				line-height: 1.8125em;
 			}
@@ -82,6 +91,16 @@
 			.main__footer a + a > img {
 				margin-left: 1rem;
 			}
+
+			.bg-blurred {
+				box-sizing: border-box;
+				padding: 0.5rem;
+				background-color: rgba(255, 255, 255, 0.3);
+				border-radius: 1rem;
+				-webkit-backdrop-filter: blur(1rem);
+				backdrop-filter: blur(1rem);
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+			}
 		</style>
 	</head>
 	<body>
@@ -102,53 +121,67 @@
 				</tr>
 				<tr class="main__content">
 					<td style="padding: 1rem">
-						<p>
-							Thân chào
-							<span>[TÊN]</span>
-						</p>
-						<p>
-							Trước tiên,
-							<span style="color: #fc5185; font-weight: 700"
-								>Đội Công Tác Xã Hội</span
-							>
-							vô cùng cảm kích trước sự quan tâm của
-							<span>[TÊN]</span> đã dành cho
-							<span style="color: #fc5185; font-weight: 700"
-								>Đội</span
-							>
-							và
-							<span style="color: #fc5185; font-weight: 700"
-								>Đội</span
-							>
-							xin lỗi vì đã phản hồi chậm trễ.
-							<span style="color: #fc5185; font-weight: 700"
-								>Đội</span
-							>
-							đã bàn bạc với các thành viên phụ trách ban Truyền
-							thông và chúng mình rất tiếc khi phải thông báo rằng
-							<span style="color: #fc5185; font-weight: 700"
-								>Đội Công Tác Xã Hội</span
-							>
-							không thể hỗ trợ Truyền thông cho
-							<span>[TÊN HOẠT ĐỘNG]</span>. Tuy vậy,
-							<span style="color: #fc5185; font-weight: 700"
-								>Đội</span
-							>
-							vẫn rất mong rằng chúng ta sẽ có cơ hội được hợp tác
-							với nhau trong tương lai.
-							<span style="color: #fc5185; font-weight: 700"
-								>Đội</span
-							>
-							mến chúc hoạt động sẽ diễn ra thật suôn sẻ và thành
-							công.
-						</p>
-						<p>
-							Thân ái,
-							<em
-								>Đội Công Tác Xã Hội, THPT chuyên Lê Hồng
-								Phong</em
-							>
-						</p>
+						<div class="bg-blurred" style="width: 100%">
+							<p>
+								Thân chào
+								<span style="color: #3fc1c9; font-weight: 700"
+									>[TÊN]</span
+								>
+							</p>
+							<p>
+								Trước tiên,
+								<span style="color: #fc5185; font-weight: 700"
+									>Đội Công Tác Xã Hội</span
+								>
+								vô cùng cảm kích trước sự quan tâm của
+								<span style="color: #3fc1c9; font-weight: 700"
+									>[TÊN]</span
+								>
+								đã dành cho
+								<span style="color: #fc5185; font-weight: 700"
+									>Đội</span
+								>
+								và
+								<span style="color: #fc5185; font-weight: 700"
+									>Đội</span
+								>
+								xin lỗi vì đã phản hồi chậm trễ.
+								<span style="color: #fc5185; font-weight: 700"
+									>Đội</span
+								>
+								đã bàn bạc với các thành viên phụ trách ban
+								Truyền thông và chúng mình rất tiếc khi phải
+								thông báo rằng
+								<span style="color: #fc5185; font-weight: 700"
+									>Đội Công Tác Xã Hội</span
+								>
+								không thể hỗ trợ Truyền thông cho
+								<span
+									style="
+										color: hsla(184, 39%, 43%, 0.989);
+										font-weight: 700;
+									"
+									>[TÊN HOẠT ĐỘNG]</span
+								>. Tuy vậy,
+								<span style="color: #fc5185; font-weight: 700"
+									>Đội</span
+								>
+								vẫn rất mong rằng chúng ta sẽ có cơ hội được hợp
+								tác với nhau trong tương lai.
+								<span style="color: #fc5185; font-weight: 700"
+									>Đội</span
+								>
+								mến chúc hoạt động sẽ diễn ra thật suôn sẻ và
+								thành công.
+							</p>
+							<p>
+								Thân ái,
+								<em
+									>Đội Công Tác Xã Hội, THPT chuyên Lê Hồng
+									Phong</em
+								>
+							</p>
+						</div>
 					</td>
 				</tr>
 				<tr class="main__footer">
