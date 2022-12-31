@@ -13,8 +13,13 @@
 		<title>Document</title>
 		<style type="text/css">
 			body {
+				box-sizing: border-box;
 				margin: 0;
-				background-color: #ccc;
+				background-image: linear-gradient(
+					to top right,
+					#2c74b3,
+					#58287f
+				);
 			}
 			table {
 				border-spacing: 0;
@@ -32,16 +37,21 @@
 
 			.wrapper {
 				box-sizing: border-box;
-				background-color: #ccc;
+				background-image: linear-gradient(
+					to bottom right,
+					#2c74b3,
+					#58287f
+				);
 				width: 100%;
 				table-layout: fixed;
-				padding-bottom: 60px;
 				overflow: hidden;
 			}
 
 			.main {
 				box-sizing: border-box;
-				border: 8px solid #364f6b;
+				/* border: 8px solid #364f6b; */
+				border: 10px solid #b5d5c5;
+				box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 				border-radius: 0.5rem;
 				background-color: #ccc;
 				width: 100%;
@@ -67,7 +77,7 @@
 			}
 
 			.main__content p {
-				line-height: 1.8125em;
+				line-height: 2em;
 			}
 
 			.main__footer {
@@ -78,8 +88,7 @@
 				padding-top: 0.5rem;
 				padding-bottom: 0.5rem;
 				border-top: 1px solid #3c4048;
-				margin-left: 4rem;
-				margin-right: 4rem;
+				margin-inline: 7rem;
 			}
 
 			.main__footer a > img {
@@ -87,6 +96,8 @@
 				width: 30px;
 				font-size: 0;
 				display: inline-block;
+				border-radius: 50%;
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 			}
 			.main__footer a + a > img {
 				margin-left: 1rem;
@@ -94,12 +105,13 @@
 
 			.bg-blurred {
 				box-sizing: border-box;
-				padding: 0.5rem;
+				padding: 0.5rem 0.8125rem;
 				background-color: rgba(255, 255, 255, 0.3);
 				border-radius: 1rem;
 				-webkit-backdrop-filter: blur(1rem);
 				backdrop-filter: blur(1rem);
-				box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+				border-radius: 1rem;
 			}
 		</style>
 	</head>
