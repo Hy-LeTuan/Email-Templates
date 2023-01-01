@@ -21,21 +21,43 @@
 			img {
 				border: 0;
 			}
-
 			div {
 				margin: 0;
 			}
+
 			.wrapper {
 				box-sizing: border-box;
 				width: 100%;
 				table-layout: fixed;
 				overflow: hidden;
+				max-width: 600px;
+				margin: 0 auto;
+			}
+
+			.main {
+				box-sizing: border-box;
+				width: 100%;
+			}
+
+			.main__body {
+				width: 100%;
+				box-sizing: border-box;
+			}
+
+			.body__main-content {
+				padding: 1rem;
+				box-sizing: border-box;
+			}
+			.main__footer img {
+				max-width: 30px;
+				height: auto;
+				display: inline-block;
 			}
 		</style>
 	</head>
 	<body>
 		<center class="wrapper">
-			<table class="main">
+			<table class="main" style="width: 100%">
 				<tr class="main__header">
 					<td>
 						<div class="header__img-wrapper">
@@ -47,7 +69,7 @@
 						</div>
 					</td>
 				</tr>
-				<tr class="main__body">
+				<tr class="main__body" style="width: 100%">
 					<td>
 						<div class="body__main-content">
 							<p>Thân chào, <span class="OTHER">[TÊN]</span></p>
@@ -84,6 +106,7 @@
 				</tr>
 				<tr class="main__footer">
 					<td>
+						<div class="footer__wrapper-border"></div>
 						<div class="footer__logo-wrapper">
 							<a
 								href="https://www.tiktok.com/@ctxh_clhp?_t=8WsvI4xLRCc&_r=1"
