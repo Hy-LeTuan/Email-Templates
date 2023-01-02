@@ -11,6 +11,7 @@
 			body {
 				box-sizing: border-box;
 				margin: 0;
+				color: white;
 			}
 			table {
 				border-spacing: 0;
@@ -32,6 +33,7 @@
 				overflow: hidden;
 				max-width: 600px;
 				margin: 0 auto;
+				background-color: black;
 			}
 
 			.main {
@@ -42,12 +44,17 @@
 			.main__body {
 				width: 100%;
 				box-sizing: border-box;
+				padding: 1rem;
 			}
-
+			.body__table-data {
+				padding: 0.5rem 1rem;
+				box-sizing: border-box;
+			}
 			.body__main-content {
 				padding: 1rem;
 				box-sizing: border-box;
 				line-height: 1.5em;
+				background-color: #00b187;
 			}
 			.main__footer img {
 				max-width: 30px;
@@ -57,6 +64,11 @@
 			.footer__wrapper-logo {
 				vertical-align: center;
 				text-align: center;
+				margin-top: 0.5rem;
+				margin-bottom: 0.5rem;
+			}
+			.footer__wrapper-border {
+				border-top: 1px solid rgb(181, 181, 181);
 			}
 			.CTXH {
 				font-weight: 700;
@@ -82,7 +94,7 @@
 					</td>
 				</tr>
 				<tr class="main__body" style="width: 100%">
-					<td>
+					<td class="body__table-data">
 						<div class="body__main-content">
 							<p>Thân chào, <span class="OTHER">[TÊN]</span></p>
 							<p>
