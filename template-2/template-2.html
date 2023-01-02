@@ -6,12 +6,18 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght400;500;700&display=swap"
+			rel="stylesheet" />
 		<title>Document</title>
 		<style type="text/css">
 			body {
 				box-sizing: border-box;
 				margin: 0;
-				color: white;
+				color: #e9f096;
+				font-family: "Open Sans", Arial, Arial, Helvetica, sans-serif;
 			}
 			table {
 				border-spacing: 0;
@@ -25,7 +31,14 @@
 			div {
 				margin: 0;
 			}
-
+			p ~ p {
+				margin-top: 0.8125rem;
+			}
+			p,
+			.body__main-paragraph {
+				font-family: inherit;
+				font-weight: 500;
+			}
 			.wrapper {
 				box-sizing: border-box;
 				width: 100%;
@@ -33,33 +46,87 @@
 				overflow: hidden;
 				max-width: 600px;
 				margin: 0 auto;
-				background-color: black;
+				/* #FAF9F6 */
+				/* F6EEE3 */
+				background-image: linear-gradient(to right, #f6eee3, #f4f0e0);
 			}
 
 			.main {
 				box-sizing: border-box;
 				width: 100%;
+				border: 10px solid #3f3b6c;
 			}
-
+			.header__img-wrapper {
+				border-bottom: 8px solid #3f3b6c;
+				margin-bottom: 0.5rem;
+			}
+			.header__img-wrapper > img {
+				margin: 0;
+				display: block;
+			}
 			.main__body {
 				width: 100%;
 				box-sizing: border-box;
 				padding: 1rem;
 			}
 			.body__table-data {
-				padding: 0.5rem 1rem;
+				padding: 0.5rem 2rem;
 				box-sizing: border-box;
 			}
 			.body__main-content {
 				padding: 1rem;
 				box-sizing: border-box;
-				line-height: 1.5em;
-				background-color: #00b187;
+				line-height: 2rem;
+				border-radius: 1rem;
+				background-image: linear-gradient(to right, #da9191, #da9191ce);
+				position: relative;
+			}
+			.body__main-bubble-top {
+				position: absolute;
+				width: 4rem;
+				height: 4rem;
+				border-radius: 50%;
+				background-color: rgba(181, 213, 197, 0.619);
+				top: 0;
+				left: 0;
+				margin-top: -1rem;
+				margin-left: -1.5rem;
+			}
+			.body__main-bubble-bottom {
+				position: absolute;
+				bottom: -1.5rem;
+				right: -1.25rem;
+				width: 4rem;
+				height: 4rem;
+				background-color: rgba(181, 213, 197, 0.619);
+				border-radius: 50%;
+			}
+
+			.body__bubble-middle {
+				position: absolute;
+				width: 200px;
+				height: 200px;
+				background-color: #f7f3d61a;
+				border-radius: 50%;
+			}
+			.bubble-left {
+				left: 5rem;
+				top: 8rem;
+			}
+			.bubble-right {
+				right: 6rem;
+				top: 11rem;
+			}
+			.bubble-top-right {
+				right: 5.5rem;
+				top: 3rem;
 			}
 			.main__footer img {
 				max-width: 30px;
 				height: auto;
 				display: inline-block;
+				border: 1px solid white;
+				border-radius: 50%;
 			}
 			.footer__wrapper-logo {
 				vertical-align: center;
@@ -67,15 +134,24 @@
 				margin-top: 0.5rem;
 				margin-bottom: 0.5rem;
 			}
+			.footer__wrapper-logo a + a {
+				margin-left: 0.5rem;
+			}
 			.footer__wrapper-border {
 				border-top: 1px solid rgb(181, 181, 181);
+				margin-top: 0.5rem;
+				width: 200px;
+				margin-left: auto;
+				margin-right: auto;
 			}
 			.CTXH {
 				font-weight: 700;
+				color: #628e86;
 			}
 			.OTHER,
 			.OTHER-ACTIVITY {
 				font-weight: 700;
+				color: #65647c;
 			}
 		</style>
 	</head>
@@ -96,28 +172,36 @@
 				<tr class="main__body" style="width: 100%">
 					<td class="body__table-data">
 						<div class="body__main-content">
+							<div class="body__main-bubble-top"></div>
 							<p>Thân chào, <span class="OTHER">[TÊN]</span></p>
-							<p>
+							<div class="body__main-paragraph">
+								<div
+									class="body__bubble-middle bubble-top-right"></div>
 								Trước tiên,
 								<span class="CTXH">Đội Công Tác Xã Hội</span> vô
 								cùng cảm kích trước sự quan tâm của
 								<span class="OTHER">[TÊN]</span> đã dành cho
 								<span class="CTXH">Đội</span>, và
 								<span class="CTXH">Đội</span> xin lỗi vì đã phản
-								hồi chậm trễ. <span class="CTXH">Đội</span> đã
-								bàn bạc với các thành viên phụ trách ban Truyền
-								thông và chúng mình rất tiếc khi phải thông báo
-								rằng
+								hồi chậm trễ.
+								<div
+									class="body__bubble-middle bubble-left"></div>
+								<span class="CTXH">Đội</span> đã bàn bạc với các
+								thành viên phụ trách ban Truyền thông và chúng
+								mình rất tiếc khi phải thông báo rằng
 								<span class="CTXH">Đội Công Tác Xã Hội</span>
 								không thể hỗ trợ Truyền thông cho
 								<span class="OTHER-ACTIVITY"
 									>[TÊN HOẠT ĐỘNG]</span
-								>. Tuy vây, <span class="CTXH">Đội</span> vẫn
-								mong rằng chúng ta sẽ có cơ hội được hợp tác với
-								nhau trong tương lai.
+								>.
+								<div
+									class="body__bubble-middle bubble-right"></div>
+								Tuy vây, <span class="CTXH">Đội</span> vẫn mong
+								rằng chúng ta sẽ có cơ hội được hợp tác với nhau
+								trong tương lai.
 								<span class="CTXH">Đội</span> mến chúc hoạt động
 								sẽ diễn ra thật suôn sẻ và thành công.
-							</p>
+							</div>
 							<p>
 								Thân ái,
 								<em
@@ -125,6 +209,7 @@
 									Phong</em
 								>
 							</p>
+							<div class="body__main-bubble-bottom"></div>
 						</div>
 					</td>
 				</tr>
