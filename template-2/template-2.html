@@ -108,13 +108,20 @@
 				background-color: rgba(181, 213, 197, 0.619);
 				border-radius: 50%;
 			}
-
 			.body__bubble-middle {
 				position: absolute;
 				width: 200px;
 				height: 200px;
 				background-color: #f7f3d627;
 				border-radius: 50%;
+			}
+			.bubble-main-top-right {
+				right: -2rem;
+				top: -1.25rem;
+			}
+			.bubble-main-bottom-left {
+				bottom: -3.8125rem;
+				left: -1.5rem;
 			}
 			.bubble-left {
 				left: 5rem;
@@ -180,7 +187,8 @@
 					<td class="body__table-data">
 						<div class="body__main-content">
 							<div class="body__main-bubble-top"></div>
-							<div class="body__main-bubble"></div>
+							<div
+								class="body__main-bubble bubble-main-top-right"></div>
 							<p>Thân chào, <span class="OTHER">[TÊN]</span></p>
 							<div class="body__main-paragraph">
 								<div
@@ -218,6 +226,8 @@
 								>
 							</p>
 							<div class="body__main-bubble-bottom"></div>
+							<div
+								class="body__main-bubble bubble-main-bottom-left"></div>
 						</div>
 					</td>
 				</tr>
